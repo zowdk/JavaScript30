@@ -95,6 +95,8 @@ const fullNames = inventors.map(
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 
+//loop through array of inventors and use 'bubbling' to sort oldest to youngest
+
 const ordered = inventors.sort(function (a, b) {
   if (a.year > b.year) {
     return 1;
@@ -105,8 +107,15 @@ const ordered = inventors.sort(function (a, b) {
 
 console.table(ordered);
 
+// reduce this solution further:
+
+const orderedReduced = inventors.sort((a, b) => (a.year > b.year ? 1 : -1));
+
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
+
+//loop through array and get the yearsLived for each inventor
+// use reduce to return the sum of all yearsLived
 
 // 5. Sort the inventors by years lived
 
