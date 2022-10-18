@@ -1,6 +1,17 @@
-/*
-      misc styles, nothing to do with CSS variables
-    */
+:root {
+  --base: hsla();
+  --spacing: 50px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: var(--blur);
+}
+.hl {
+  color: var(--base);
+}
 
 body {
   text-align: center;
