@@ -22,6 +22,7 @@ img {
   width: 100%;
   display: block;
   border: 2px solid salmon;
+  height: 100%;
 }
 
 /* Utility Classes */
