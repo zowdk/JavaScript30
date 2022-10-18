@@ -68,10 +68,10 @@ span {
 i {
   font-size: 1.5rem;
 }
-.
-  /* Layout */
-  .header {
-  padding-bottom: 2em;
+
+/* Layout */
+.container-inner__header {
+  margin-block: 3em;
 }
 .section__header {
   padding-block: 1em;
