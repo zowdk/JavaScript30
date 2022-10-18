@@ -84,6 +84,14 @@ console.table(fifteenReduced);
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
 
+//setup new arr for full names
+//loop through inventors:
+// map inventors.first and inventors.last
+
+const fullNames = inventors.map(
+  (inventor) => `${inventor.first} + ${inventor.last}`
+);
+
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 
