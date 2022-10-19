@@ -21,7 +21,7 @@ body {
 img {
   width: 100%;
   display: block;
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
   height: 100%;
 }
 
@@ -85,7 +85,6 @@ i {
   margin-inline: 0.5em;
 }
 .project-tiles {
-  border: 2px solid slategray;
   justify-content: space-around;
   padding-block: 0.5em;
   display: grid;
@@ -98,7 +97,6 @@ i {
 .project-tile__post-thumb {
   flex-direction: column;
   padding: 3em;
-  border: 2px solid slateblue;
   background-color: hsla(262, 100%, 13%, 1);
   color: #fff;
 }
@@ -113,7 +111,6 @@ i {
 .post-thumb__icons {
   order: 3;
   margin-top: 0.75em;
-  border: 2px solid hotpink;
   width: 100%;
   padding: 0.5em;
   justify-content: space-around;
