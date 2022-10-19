@@ -1,11 +1,11 @@
-# #JavaScript30
-30 Day Vanilla JavaScript challenge. Based on tutorials by @wesbos.
-
+# JavaScript30
 <img src="./misc/javascript-30.png" alt="javascript 30 written in a starry purple sky" width="800" />
+
+This repo contains solutions to 30 Days of Vanilla JavaScript challenges. Based on tutorials by [@wesbos](https://twitter.com/wesbos).
 
 ## Live Site Demo
 
-- Not set up yet.
+[Live Site](https://zowdk.github.io/JavaScript30/index.html)
 
 ## Learning Objectives
 
