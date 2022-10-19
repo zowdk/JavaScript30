@@ -19,5 +19,5 @@
 
 - Big thanks to [@wesbos]("https://twitter.com/wesbos") for creating this course!
 - Starter files were forked from the original [JavaScript 30 Repository]("https://github.com/wesbos/JavaScript30").
-- You can find the full course [here]("#"). It's free ✨
+- You can find the full course at https://JavaScript30.com. It's free ✨
  
