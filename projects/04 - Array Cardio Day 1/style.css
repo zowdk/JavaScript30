@@ -26,11 +26,15 @@ li {
 li:last-child {
   margin-bottom: 2em;
 }
+span {
+  color: slateblue;
+}
 
 /*layout */
 header {
   background-color: #212529;
   padding-block: 2em;
+  letter-spacing: 1px;
 }
 .container {
   max-width: 80vw;
