@@ -192,3 +192,23 @@ const data = [
   "car",
   "truck",
 ];
+// write a function that takes an obj and item as parameters
+// if there is no instance, set obj[item] to 0
+// increment instances by 1
+
+// set up blank object
+
+// set up variable for total instances = 0
+// loop through arr
+// if instance matches, increase counter
+
+const transport = data.recude(function (obj, item) {
+  if (!obj[item]) {
+    obj[item] = 0;
+  }
+
+  object[item]++;
+  return obj;
+}, {});
+
+console.log(transport);
