@@ -124,6 +124,29 @@ const totalYears = inventors.reduce((total, inventor) => {
 console.log(totalYears);
 
 // 5. Sort the inventors by years lived
+//who lived the longest?
+// loop through inventors and sort based on difference in lifespan
+
+const oldest = inventors.sort(function (a, b) {
+  const lastGuy = a.passed - a.year;
+  const nextGuy = b.passed - b.year;
+  if (lastGuy > nextGuy) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+console.table(oldest);
+
+// alternative solution:
+
+const eldest = inventors.sort(function (a, b) {
+  const oldestGuy = a.passed - a.year;
+  const nextOldestGuy = b.passed - b.year;
+
+  return oldetGuy > nextOldestGuy ? 1 : -1;
+});
+console.table(eldest);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
