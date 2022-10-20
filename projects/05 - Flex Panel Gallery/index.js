@@ -1,4 +1,4 @@
-const panels = document.querySelectorAll(".panels");
+const panels = document.querySelectorAll(".panel");
 
 // write a function that will toggle the class of open on panels:
 // listen for panel to be hovered over or clicked?
