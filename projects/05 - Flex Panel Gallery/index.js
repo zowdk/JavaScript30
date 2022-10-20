@@ -9,4 +9,13 @@ function toggleOpen() {
   this.classList.toggle("open");
 }
 
+function toggleActive() {
+  this.classList.add("open-active");
+}
+
 panels.forEach((panel) => panel.addEventListener("click", toggleOpen));
+
+// listen for transition end event before animating text:
+panels.forEach((panel) =>
+  panel.addEventListener("transitionend", toggleActive)
+);
