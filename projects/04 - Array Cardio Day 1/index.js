@@ -166,6 +166,14 @@ const de = links
 // 7. sort Exercise
 // Sort the people alphabetically by last name
 
+// convert str (each name) into arr of char with split
+//destructure with square brackets
+const alpha = people.sort(function (lastPerson, nextPerson) {
+  const [aLast, aFirst] = lastPerson.split(", ");
+  const [bLast, bFirst] = nextPerson.split(", ");
+  return aLast > bLast ? 1 : -1;
+});
+
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = [
