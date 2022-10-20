@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* general */
+body {
+  line-height: 1.5;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #31363b;
+  color: #fff;
+  font-weight: 200;
+}
+/* typography */
+h1,
+ul {
+  text-align: left;
+}
+h1 {
+  padding-block: 1em;
+}
+li {
+  margin-bottom: 1em;
+}
+li:last-child {
+  margin-bottom: 2em;
+}
+
+/*layout */
+header {
+  background-color: #212529;
+  padding-block: 2em;
+}
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}

@@ -144,9 +144,9 @@ const eldest = inventors.sort(function (a, b) {
   const oldestGuy = a.passed - a.year;
   const nextOldestGuy = b.passed - b.year;
 
-  return oldetGuy > nextOldestGuy ? 1 : -1;
+  return oldestGuy > nextOldestGuy ? 1 : -1;
 });
-console.table(eldest);
+// console.table(eldest);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
@@ -157,11 +157,13 @@ console.table(eldest);
 // convert list of links to list of names by mapping over each link
 // filter names list for entries that include 'de'
 
-const category = document.querySelector(".mw-category");
-const links = Array.from(category.querySelectorAll("a"));
-const de = links
-  .map((link) => link.textContent)
-  .filter((streetName) => streetName.includes("de"));
+// const category = document.querySelector(".mw-category");
+// const links = Array.from(category.querySelectorAll("a"));
+// const de = links
+//   .map((link) => link.textContent)
+//   .filter((streetName) => streetName.includes("de"));
+
+// console.log(de);
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
@@ -202,12 +204,12 @@ const data = [
 // loop through arr
 // if instance matches, increase counter
 
-const transport = data.recude(function (obj, item) {
+const transport = data.reduce(function (obj, item) {
   if (!obj[item]) {
     obj[item] = 0;
   }
 
-  object[item]++;
+  obj[item]++;
   return obj;
 }, {});
 
