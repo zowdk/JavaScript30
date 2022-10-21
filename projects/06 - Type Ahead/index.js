@@ -8,5 +8,5 @@ const endpoint =
 const cities = [];
 
 const prom = fetch(endpoint).then((blob) =>
-  console.log(blob.json()).then((data) => cities.push(data))
+  console.log(blob.json()).then((data) => cities.push(...data))
 );
