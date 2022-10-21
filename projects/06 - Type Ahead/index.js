@@ -1,3 +1,7 @@
+//1. Get date
+//2. Set up functionality
+//3. Add listeners
+
 // data was converted to a url from a cites.json file (array), which includes city name, state name, city coordinates, and population.
 
 const endpoint =
@@ -27,7 +31,8 @@ function findMatches(wordToMatch, cities) {
 //display function to update whenever searched values change
 
 function displayMatches() {
-  console.log(this.value);
+  const matchArray = findMatches(this.value, cities);
+  console.log(matchArray);
 }
 
 const searchInput = document.querySelector(".search");
