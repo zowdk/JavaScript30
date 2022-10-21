@@ -32,7 +32,14 @@ function findMatches(wordToMatch, cities) {
 
 function displayMatches() {
   const matchArray = findMatches(this.value, cities);
-  console.log(matchArray);
+  const html = matchArray.map((place) => {
+    return `
+            <li>
+                <span class="name">${place.city}, ${place.state}</span>
+                <span class="population">${place.population}</span>
+            </li>
+        `;
+  });
 }
 
 const searchInput = document.querySelector(".search");
