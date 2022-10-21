@@ -1,6 +1,7 @@
 //1. Get date
 //2. Set up functionality
 //3. Add listeners
+//4. Format population numbers and highlight matched characters
 
 // data was converted to a url from a cites.json file (array), which includes city name, state name, city coordinates, and population.
 
@@ -34,6 +35,10 @@ function displayMatches() {
   const matchArray = findMatches(this.value, cities);
   const html = matchArray
     .map((place) => {
+      //create regex to match city name
+      // replace word that matches with span to highlight match
+      const regex = new RegExp(this.value, "gi");
+
       return `
             <li>
                 <span class="name">${place.city}, ${place.state}</span>
