@@ -40,6 +40,7 @@ function displayMatches() {
             </li>
         `;
   });
+  suggestion.innerHTML = html;
 }
 
 const searchInput = document.querySelector(".search");
