@@ -38,6 +38,10 @@ function displayMatches() {
       //create regex to match city name
       // replace word that matches with span to highlight match
       const regex = new RegExp(this.value, "gi");
+      const cityName = place.city.replace(
+        regex,
+        `<span class="hl">${this.value}</span>`
+      );
 
       return `
             <li>
