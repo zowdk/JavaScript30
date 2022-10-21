@@ -10,3 +10,16 @@ const cities = [];
 const prom = fetch(endpoint).then((blob) =>
   console.log(blob.json()).then((data) => cities.push(...data))
 );
+
+//filter massive array down into subset that can be listened for
+
+function findMatches(wordToMatch, cities) {
+  return cities.filter((place) => {
+    //does city or state match search?
+    //use regex to find out:
+    // g looks through entire string
+    // i looks are both upper and lowercase
+    const regex = new RegExp(wordToMatch, "gi");
+    return place.city.match(regex) || place.state.match(regex);
+  });
+}
