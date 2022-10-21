@@ -12,8 +12,8 @@ const endpoint =
 // use fetch api to get data
 const cities = [];
 
-const prom = fetch(endpoint).then((blob) =>
-  console.log(blob.json()).then((data) => cities.push(...data))
+fetch(endpoint).then((blob) =>
+  blob.json().then((data) => cities.push(...data))
 );
 
 //filter massive array down into subset that can be listened for
@@ -55,7 +55,7 @@ function displayMatches() {
         `;
     })
     .join("");
-  suggestion.innerHTML = html;
+  suggestions.innerHTML = html;
 }
 
 const searchInput = document.querySelector(".search");
