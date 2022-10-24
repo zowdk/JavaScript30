@@ -19,7 +19,14 @@ let lastY = 0;
 function draw(e) {
   if (!isDrawing) return;
   console.log(draw);
+
+  ctx.beginPath();
+  ctx.moveTo(lastX, lastY);
+  ctx.lineTo(e.offsetX, e.offsetY);
+  ctx.stroke();
 }
+
+// click & drag functionality
 
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mousedown", () => (isDrawing = true));
