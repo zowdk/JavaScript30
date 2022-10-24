@@ -30,17 +30,31 @@ const isLegalAdult = people.some((person) => {
   const thisYear = new Date.getFullYear();
   return thisYear - person.year >= 18;
 });
+console.log(isLegalAdult);
 // 2. Array.prototype.every() // is everyone 19 or older?
 // Every checks to see that all cases meet criteria
 
 const allAdults = people.every(
   (person) => new Date().getFullYear() - person.year <= 19
 );
+console.log(allAdults);
 
 // 3. Array.prototype.find()
-// 4. Find is like filter, but instead returns just the one you are looking for
-// 5. find the comment with the ID of 823423
+//  Find the comment with the ID of 823423
+// Find will return the first instance that it finds
+//  Find is like filter, but instead returns just the one you are looking for
+const comment = comments.find(function (comment) {
+  if (comment.id === 823423) {
+    return true;
+  }
+});
 
+console.log(comment);
+
+// convert to arrow function with implicit return:
+
+const foundComment = comments.find((comment) => comment.id === 823423);
+console.log(findComment);
 // 6. Array.prototype.findIndex()
 // 7. Find the comment with this ID
 // 8. delete the comment with the ID of 823423
