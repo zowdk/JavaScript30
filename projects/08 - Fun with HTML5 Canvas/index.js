@@ -21,9 +21,13 @@ function draw(e) {
   console.log(draw);
 
   ctx.beginPath();
+  //start from
   ctx.moveTo(lastX, lastY);
+  //go to
   ctx.lineTo(e.offsetX, e.offsetY);
   ctx.stroke();
+  lastX = e.offsetX;
+  lastY = e.offsetY;
 }
 
 // click & drag functionality
