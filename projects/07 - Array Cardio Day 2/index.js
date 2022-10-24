@@ -16,7 +16,7 @@ const comments = [
 ];
 
 // Some and Every Checks
-// 1.  Array.prototype.some() // is at least one person 19 or older?
+// 1.  Array.prototype.some() is at least one person 19 or older?
 // Every checks to see if at least 1 case meets criteria
 
 // const isAdult = people.some(function (person) {
