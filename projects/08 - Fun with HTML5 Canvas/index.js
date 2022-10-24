@@ -15,10 +15,12 @@ ctx.lineCap = "round"; // round line when it meets another line
 let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
+let hue = 0;
 
 function draw(e) {
   if (!isDrawing) return;
-  console.log(draw);
+  console.log(e);
+  ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 
   ctx.beginPath();
   //start from
@@ -31,6 +33,7 @@ function draw(e) {
   //written in fancy es6 destructuring [lastX, lastY] = [e.offsetX, e.offsetY];
   lastX = e.offsetX;
   lastY = e.offsetY;
+  hue++;
 }
 
 // click & drag functionality
