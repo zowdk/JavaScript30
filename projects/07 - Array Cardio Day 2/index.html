@@ -4,9 +4,77 @@
     <meta charset="UTF-8" />
     <title>Array Cardio 💪💪</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- for code syntax highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+    />
   </head>
   <body>
-    <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+    <header>
+      <p><em>Psst: have a look at the JavaScript Console</em> 💁🏽‍♀️</p>
+      <div class="container shortcuts">
+        <p><span>Cmd + Opt + J (Mac) | Ctrl + Shift + J (Windows)</span></p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Array Cardio II</h1>
+
+        <h2>Methods</h2>
+
+        <ul class="methods-list">
+          <li>Array.prototype.some()</li>
+          <li>Array.prototype.every()</li>
+          <li>Array.prototype.find()</li>
+          <li>Array.prototype.findIndex()</li>
+        </ul>
+
+        <h2>Problem Set</h2>
+
+        <pre><code class= "language-javascript">
+          const people = [
+              { name: "Wes", year: 1988 },
+              { name: "Kait", year: 1986 },
+              { name: "Irv", year: 1970 },
+              { name: "Lux", year: 2015 },
+            ];
+        </code></pre>
+
+        <pre><code class="language-javascript">
+          const comments = [
+              { text: "Love this!", id: 523423 },
+              { text: "Super good", id: 823423 },
+              { text: "You are the best", id: 2039842 },
+              { text: "Ramen is my fav food ever", id: 123523 },
+              { text: "Nice Nice Nice!", id: 542328 },
+            ];
+        </code></pre>
+
+        <ol>
+          <li>Array.prototype.some() // is at least one person 19 or older?</li>
+          <li>Array.prototype.every() // is everyone 19 or older?</li>
+          <li>
+            Array.prototype.find() // Find the comment with the ID of 823423
+          </li>
+          <li>
+            Array.prototype.findIndex() // Find and delete the comment with ID
+            of 823423
+          </li>
+        </ol>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <span>&lt; / &gt;</span> by
+        <a href="https://twitter.com/zowdk">@zowdk</a> as part of
+        <a href="https://javascript30.com/">#JavaScript30</a>
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
