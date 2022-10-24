@@ -17,6 +17,7 @@ const comments = [
 
 // Some and Every Checks
 // 1.  Array.prototype.some() // is at least one person 19 or older?
+// Every checks to see if at least 1 case meets criteria
 const isAdult = people.some(function (person) {
   const currentYear = new Date.getFullYear();
   if (currentYear - person.year >= 18) {
@@ -30,6 +31,11 @@ const isLegalAdult = people.some((person) => {
   return thisYear - person.year >= 18;
 });
 // 2. Array.prototype.every() // is everyone 19 or older?
+// Every checks to see that all cases meet criteria
+
+const allAdults = people.every(
+  (person) => new Date().getFullYear() - person.year <= 19
+);
 
 // 3. Array.prototype.find()
 // 4. Find is like filter, but instead returns just the one you are looking for
