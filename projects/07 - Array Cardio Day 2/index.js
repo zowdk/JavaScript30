@@ -54,7 +54,7 @@ console.log(comment);
 // convert to arrow function with implicit return:
 
 const foundComment = comments.find((comment) => comment.id === 823423);
-console.log(findComment);
+console.log(foundComment);
 
 // 4. Array.prototype.findIndex()
 //  Find and delete the comment with ID of 823423
