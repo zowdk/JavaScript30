@@ -5,7 +5,11 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// base styles for stoke setting, line cap, line join
-ctx.strokeStyke = "#BADA55";
-ctx.lineJoin = "round";
-ctx.lineCap = "round";
+// base styles
+ctx.strokeStyke = "#BADA55"; // drawing color
+ctx.lineJoin = "round"; // end of line drawn should be round
+ctx.lineCap = "round"; // round line when it meets another line
+
+// dummy variables
+
+let isDrawing = false;
