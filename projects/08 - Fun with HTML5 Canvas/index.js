@@ -26,6 +26,8 @@ function draw(e) {
   //go to
   ctx.lineTo(e.offsetX, e.offsetY);
   ctx.stroke();
+
+  //written in fancy es6 destructuring [lastX, lastY] = [e.offsetX, e.offsetY];
   lastX = e.offsetX;
   lastY = e.offsetY;
 }
