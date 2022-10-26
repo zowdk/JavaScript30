@@ -10,8 +10,11 @@ function makeGreen() {
 }
 
 // Regular
+console.log("hello");
 
 // Interpolated
+console.log("hello, I am a %s string!", "💩 ");
+// console.log(`hello, I am a ${var}`);
 
 // Styled
 
