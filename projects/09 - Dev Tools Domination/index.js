@@ -17,9 +17,13 @@ console.log("hello, I am a %s string!", "💩 ");
 // console.log(`hello, I am a ${var}`);
 
 // Styled - using %c
-console.log("%c I am some great text", "font-size: 50px");
+console.log(
+  "%c I am some great text",
+  "font-size: 50px; background: red; text-shadow: 10px 10px 0 blue;"
+);
 
 // warning!
+console.warn("OH NOES!");
 
 // Error :|
 
