@@ -31,7 +31,8 @@ console.error("Zut!");
 // Info
 console.info("crocodiles eat 3-4 people per year");
 
-// Testing
+// Testing - only returns if something is not true
+console.assert(1 === 1, "That is wrong!");
 
 // clearing
 
