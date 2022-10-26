@@ -29,6 +29,7 @@ console.warn("OH NOES!");
 console.error("Zut!");
 
 // Info
+console.info("crocodiles eat 3-4 people per year");
 
 // Testing
 
