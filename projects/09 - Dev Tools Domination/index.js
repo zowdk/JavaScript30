@@ -12,11 +12,12 @@ function makeGreen() {
 // Regular
 console.log("hello");
 
-// Interpolated
+// Interpolated - using %s
 console.log("hello, I am a %s string!", "💩 ");
 // console.log(`hello, I am a ${var}`);
 
-// Styled
+// Styled - using %c
+console.log("%c I am some great text", "font-size: 50px");
 
 // warning!
 
