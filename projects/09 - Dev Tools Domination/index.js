@@ -26,6 +26,7 @@ console.log(
 console.warn("OH NOES!");
 
 // Error :|
+console.error("Zut!");
 
 // Info
 
