@@ -40,7 +40,9 @@ console.assert(p.classList.contains("ouch"), "That is wrong!");
 // clearing - clear console
 console.clear();
 
-// Viewing DOM Elements
+// Viewing DOM Elements - find available methods & properties on element
+console.log(p);
+console.dir(p); // see all methods & properties
 
 // Grouping together
 
