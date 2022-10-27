@@ -9,10 +9,17 @@ console.log(checkboxes);
 let lastChecked = function handleCheck(e) {
   // check if shift key was held down
   // AND make sure box is being checked
+  let inBetween = false;
   if (e.shiftKey && this.checked) {
     //loop through every checkbox:
     // look for first box checked
     // and check all boxes in between first and last
+    checkboxes.forEach((checkbox) => {
+      console.log(checkbox);
+      if (checkbox === this || checkbox === lastChecked) {
+        inBetween = !inBetween;
+      }
+    });
   }
 
   lastChecked = this;
