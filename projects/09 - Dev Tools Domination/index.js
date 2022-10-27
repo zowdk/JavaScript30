@@ -37,7 +37,8 @@ console.assert(1 === 2, "That is wrong!");
 const p = document.querySelectorAll("p");
 console.assert(p.classList.contains("ouch"), "That is wrong!");
 
-// clearing
+// clearing - clear console
+console.clear();
 
 // Viewing DOM Elements
 
