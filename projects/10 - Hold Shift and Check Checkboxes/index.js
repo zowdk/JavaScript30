@@ -6,6 +6,10 @@
 const checkboxes = document.querySelectorAll(".inbox input[type='checkbox']");
 console.log(checkboxes);
 
+checkboxes.forEach((checkbox) =>
+  checkbox.addEventListener("click", handleCheck)
+);
+
 // checkbox.addEventListener("onclick", selectStart);
 
 // function selectStart() {
