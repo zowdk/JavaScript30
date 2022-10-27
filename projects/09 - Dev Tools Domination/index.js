@@ -34,6 +34,9 @@ console.info("crocodiles eat 3-4 people per year");
 // Testing - only returns if something is not true
 console.assert(1 === 2, "That is wrong!");
 
+const p = document.querySelectorAll("p");
+console.assert(p.classList.contains("ouch"), "That is wrong!");
+
 // clearing
 
 // Viewing DOM Elements
