@@ -7,14 +7,20 @@ const checkboxes = document.querySelectorAll(".inbox input[type='checkbox']");
 console.log(checkboxes);
 
 let lastChecked = function handleCheck(e) {
+  // check if shift key was held down
+  // AND make sure box is being checked
+  if (e.shiftKey && this.checked) {
+    //loop through every checkbox:
+    // look for first box checked
+    // and check all boxes in between first and last
+  }
+
   lastChecked = this;
 };
 
 checkboxes.forEach((checkbox) =>
   checkbox.addEventListener("click", handleCheck)
 );
-
-// checkbox.addEventListener("onclick", selectStart);
 
 // function selectStart() {
 //   console.log("it works!");
