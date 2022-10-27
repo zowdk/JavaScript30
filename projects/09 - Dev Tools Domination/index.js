@@ -45,7 +45,13 @@ console.log(p);
 console.dir(p); // see all methods & properties
 
 // Grouping together
-
+dogs.forEach((dog) => {
+  console.group(`${dog.name}`); // less messy groupCollapsed
+  console.log(`This is ${dog.name}`);
+  console.log(`${dog.name} is ${dog.age} years old`);
+  console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+  console.groupEnd(`${dog.name}`); // pass same string used to define group
+});
 // counting
 
 // timing
