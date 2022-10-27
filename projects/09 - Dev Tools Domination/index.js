@@ -62,4 +62,13 @@ console.count("Wes");
 console.count("Steeve");
 console.count("Steeve");
 console.count("Wes"); // 8 times
-// timing
+
+// timing - how long does something take?
+console.time("fetching data");
+
+fetch("https://api.github.com/users/zowdk")
+  .then((data) => data.json())
+  .then((data) => {
+    console.timeEnd("fetching data");
+    console.log(data);
+  });
