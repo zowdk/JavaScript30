@@ -72,3 +72,7 @@ fetch("https://api.github.com/users/zowdk")
     console.timeEnd("fetching data");
     console.log(data);
   });
+
+//table - take an arr of objects, display in a table
+
+console.table(dogs);
