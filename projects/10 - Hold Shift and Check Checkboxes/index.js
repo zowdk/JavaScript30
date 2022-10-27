@@ -19,6 +19,10 @@ let lastChecked = function handleCheck(e) {
       if (checkbox === this || checkbox === lastChecked) {
         inBetween = !inBetween;
       }
+
+      if (inBetween) {
+        checkbox.checked = true;
+      }
     });
   }
 
@@ -28,11 +32,3 @@ let lastChecked = function handleCheck(e) {
 checkboxes.forEach((checkbox) =>
   checkbox.addEventListener("click", handleCheck)
 );
-
-// function selectStart() {
-//   console.log("it works!");
-// }
-
-// function selectEnd() {
-//   KeyboardEvent.shiftKey();
-// }
