@@ -27,6 +27,11 @@ function updateButton() {
   console.log(icon);
   togglePlay.textContent = icon;
 }
+// Make a function for skip buttons
+function skip() {
+  console.log("skipping!");
+  video.currentTime += parseFloat(this.dataset.skip);
+}
 
 //3. Hook up event listeners
 
@@ -37,3 +42,6 @@ playerToggle.addEventListener("click", togglePlay);
 //listen on video and update the button so user knows to play / pause
 video.addEventListener("play", updateButton);
 video.addEventListener("pause", updateButton);
+
+//listen for a click on anything with data-skip attribute
+skipButtons.forEach((button) => button.addEventListener("click", skip));
