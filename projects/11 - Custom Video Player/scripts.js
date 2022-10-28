@@ -1,4 +1,3 @@
-//1. Get elements:
 //2. Build functions
 //3. Hook up event listeners
 
@@ -10,3 +9,16 @@ const progressFilled = player.querySelector(".progress__filled");
 const playerToggle = player.querySelector(".toggle");
 const playerSlider = player.querySelectorAll(".player__slider");
 const skipButtons = player.querySelectorAll("[data-skip]");
+
+//Write a function that plays a paused video,
+// or pauses a playing video.
+
+function togglePlay() {
+  //   const method = video.paused ? "play" : "pause";
+  //   video[method]();
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
