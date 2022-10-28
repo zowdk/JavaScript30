@@ -21,8 +21,19 @@ function togglePlay() {
     video.pause();
   }
 }
+//Write a function updateButton that displays play or pause
+function updateButton() {
+  const icon = this.paused ? "►" : "◼︎";
+  console.log(icon);
+  togglePlay.textContent = icon;
+}
+
 //3. Hook up event listeners
 
 //when play button or video screen get clicked, togglePlay
 video.addEventListener("click", togglePlay);
 playerToggle.addEventListener("click", togglePlay);
+
+//listen on video and update the button so user knows to play / pause
+video.addEventListener("play", updateButton);
+video.addEventListener("pause", updateButton);
