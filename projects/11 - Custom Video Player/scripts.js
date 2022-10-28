@@ -1,6 +1,3 @@
-//2. Build functions
-//3. Hook up event listeners
-
 const player = document.querySelector(".player");
 const video = player.querySelector(".viewer");
 
@@ -9,6 +6,8 @@ const progressFilled = player.querySelector(".progress__filled");
 const playerToggle = player.querySelector(".toggle");
 const playerSlider = player.querySelectorAll(".player__slider");
 const skipButtons = player.querySelectorAll("[data-skip]");
+
+//2. Build functions
 
 //Write a function that plays a paused video,
 // or pauses a playing video.
@@ -22,3 +21,8 @@ function togglePlay() {
     video.pause();
   }
 }
+//3. Hook up event listeners
+
+//when play button or video screen get clicked, togglePlay
+video.addEventListener("click", togglePlay);
+playerToggle.addEventListener("click", togglePlay);
