@@ -6,6 +6,7 @@ const progressBar = player.querySelector(".progress__filled");
 const playerToggle = player.querySelector(".toggle");
 const playerSlider = player.querySelectorAll(".player__slider");
 const skipButtons = player.querySelectorAll("[data-skip]");
+const fullscreenBtn = player.querySelector("[data-fullscreen]");
 
 //2. FUNCTIONS
 
@@ -49,6 +50,18 @@ function scrub(e) {
   const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
 }
+//Write a function that makes video fullscreen when clicked
+function toggleFullScreen() {
+  console.log("clicked!");
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.webkitRequestFullScreen) {
+    video.webkitRequestFullScreen();
+  } else if (video.mozRequestFullScreen) {
+    video.mozRequestFullScreen();
+  }
+}
+
 //3. EVENT LISTENERS
 
 //when play button or video screen get clicked, togglePlay
@@ -58,6 +71,9 @@ playerToggle.addEventListener("click", togglePlay);
 //listen on video and update the button so user knows to play / pause
 video.addEventListener("play", updateButton);
 video.addEventListener("pause", updateButton);
+
+//listen on video to make it fullscreen when clicked
+fullscreenBtn.addEventListener("click", toggleFullScreen);
 
 //listen for the video to emit an event, then run handleProgress
 video.addEventListener("timeupdate", handleProgress);
