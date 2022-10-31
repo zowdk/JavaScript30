@@ -46,7 +46,7 @@ function handleProgress() {
 }
 
 //Make a function scrub, that jumps to corresponding points in video when clicked
-function scrub() {
+function scrub(e) {
   const scrubTime = (e.offsetX / progressBar.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
 }
@@ -65,6 +65,15 @@ video.addEventListener("timeupdate", handleProgress);
 
 //listen for click on progress bar
 progressBar.addEventListener("click", scrub);
+
+//listen for progress bar getting dragged - clicked AND dragged
+let mousedown = false;
+
+//move video progress to corresponding point only if progress bar gets clicked
+progressBar.addEventListener("mousemove", (e) => mousedown && scrub(e));
+progressBar.addEventListener("mousedown", () => (mousedown = true));
+progressBar.addEventListener("mouseup", () => (mousedown = false));
+
 //listen for a click on anything with data-skip attribute
 skipButtons.forEach((button) => button.addEventListener("click", skip));
 
