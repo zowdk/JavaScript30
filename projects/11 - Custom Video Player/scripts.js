@@ -38,6 +38,18 @@ function handleRangeUpdate() {
   video[this.name] = this.value;
 }
 
+//Write a function that handles the progress bar updating in real time,
+
+function handleProgress() {
+  const percent = (video.currentTime / video.duration) * 100;
+  progressBar.style.flexBasis = `${percent}%`;
+}
+
+//Make a function scrub, that jumps to corresponding points in video when clicked
+function scrub() {
+  const scrubTime = (e.offsetX / progressBar.offsetWidth) * video.duration;
+  video.currentTime = scrubTime;
+}
 //3. EVENT LISTENERS
 
 //when play button or video screen get clicked, togglePlay
@@ -48,6 +60,11 @@ playerToggle.addEventListener("click", togglePlay);
 video.addEventListener("play", updateButton);
 video.addEventListener("pause", updateButton);
 
+//listen for the video to emit an event, then run handleProgress
+video.addEventListener("timeupdate", handleProgress);
+
+//listen for click on progress bar
+progressBar.addEventListener("click", scrub);
 //listen for a click on anything with data-skip attribute
 skipButtons.forEach((button) => button.addEventListener("click", skip));
 
