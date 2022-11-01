@@ -21,7 +21,7 @@ const sliderImages = document.querySelectorAll(".slide-in");
 function checkSlide(e) {
   console.log(e);
   //loop over every img, figure out where each img needs to be displayed
-  sliderImagees.array.forEach((sliderImage) => {
+  sliderImages.array.forEach((sliderImage) => {
     //do math to figure out if image is displayed or not:
     //how far is page being scrolled down? get pixel level for where user is relative to bottom of page:
     const slideInAt =
