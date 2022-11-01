@@ -10,5 +10,6 @@ window.addEventListener("keyup", (e) => {
   pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length); //search only for char length of secretcode, not log every key pressed
   if (pressed.join("").includes(secretCode)) {
     console.log("DING DING! Got it!");
+    cornify.add(); //hilarious reward for typing correct sequence
   }
 });
