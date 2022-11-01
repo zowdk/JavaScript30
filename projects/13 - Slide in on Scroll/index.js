@@ -34,6 +34,8 @@ function checkSlide(e) {
 
     //is the img half shown?
     const isHalfShown = slideInAt > sliderImage.offsetTop;
+    // is img not scrolled past?
+    const isNotScrolledPast = window.scrollY < imgageBottom;
   });
 }
 //  use debounce to limit how much this check runs. hundreds of events can cause performance issues:
