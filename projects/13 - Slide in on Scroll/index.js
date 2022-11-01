@@ -45,4 +45,4 @@ function checkSlide(e) {
   });
 }
 //  use debounce to limit how much this check runs. hundreds of events can cause performance issues:
-window.addEventListener("scoll", debounce(checkSlide));
+window.addEventListener("scroll", debounce(checkSlide));
