@@ -27,6 +27,10 @@ function checkSlide(e) {
     const slideInAt =
       window.scrollY + window.innerHeight - sliderImage.height / 2; //slide img in at mid-point
     console.log(slideInAt);
+
+    //where is img bottom? what if scrolling from bottom to top?
+    // offset top: how far is image top relative to top of page?
+    const imgageBottom = sliderImage.offsetTop + sliderImage.height;
   });
 }
 //  use debounce to limit how much this check runs. hundreds of events can cause performance issues:
