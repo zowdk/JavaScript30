@@ -16,3 +16,11 @@ function debounce(func, wait = 20, immediate = true) {
 
 //select all images
 const sliderImages = document.querySelectorAll(".slide-in");
+
+//Write a function checkSlide that runs every time user scrolls
+function checkSlide(e) {
+  console.log(e);
+}
+//  use debounce to limit how much this check runs. hundreds of events can cause performance issues:
+
+window.addEventListener("scoll", debounce(checkSlide));
