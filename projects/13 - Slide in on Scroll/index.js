@@ -31,6 +31,9 @@ function checkSlide(e) {
     //where is img bottom? what if scrolling from bottom to top?
     // offset top: how far is image top relative to top of page?
     const imgageBottom = sliderImage.offsetTop + sliderImage.height;
+
+    //is the img half shown?
+    const isHalfShown = slideInAt > sliderImage.offsetTop;
   });
 }
 //  use debounce to limit how much this check runs. hundreds of events can cause performance issues:
