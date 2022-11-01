@@ -25,7 +25,7 @@ function checkSlide(e) {
     //do math to figure out if image is displayed or not:
     //how far is page being scrolled down? get pixel level for where user is relative to bottom of page:
     const slideInAt =
-      window.scrollY + window.innerHeight - sliderImage.height / 2; //slide img in at mid-point
+      window.scrollY + window.innerHeight - sliderImage.height / 2; //slide img in mid-point
     console.log(slideInAt);
 
     //where is img bottom? what if scrolling from bottom to top?
