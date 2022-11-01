@@ -1,7 +1,7 @@
 //basis of setting up a key sequencing detection
 
 let pressed = [];
-const secretCode = "wesbos";
+const secretCode = "cornify";
 
 window.addEventListener("keyup", (e) => {
   console.log(e.key);
