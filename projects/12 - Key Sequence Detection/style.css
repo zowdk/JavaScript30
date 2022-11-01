@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  background-color: #ec8483;
+  color: #fff;
+}
