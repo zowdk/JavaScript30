@@ -31,7 +31,16 @@ function populateList(plates = [], platesList) {
     .join("");
 } // note: possible to update singular items instead of re-rendering entire list for better performance
 
+function toggleDone(e) {
+  //check if target matches the input we want
+  if (!e.target.matches("input")) return; //skil unless it's an input
+  const el = e.target;
+  const index = el.dataset.index;
+}
+
 // listen for submit event
 addItems.addEventListener("submit", addItem);
+
+itemsList.addEventListener("click", toggleDone);
 
 populateList(items, itemsList);
