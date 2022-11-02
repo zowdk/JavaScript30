@@ -10,7 +10,7 @@ function addItem(e) {
     text, // es6 shorthand
     done: false, // done is a state
   };
-  console.log(item);
+  this.reset();
 }
 
 // listen for submit event
