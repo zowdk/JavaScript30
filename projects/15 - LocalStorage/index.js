@@ -37,6 +37,12 @@ function populateList(plates = [], platesList) {
         `;
     })
     .join("");
+  //loop over each btn-remove and add an event listen for each btn-remove
+  const removeBtns = document.querySelectorAll(".btn-remove");
+  for (let i = 0; i < removeBtns.length; i++) {
+    // add event listeners on btn-remove so that btn works more than once
+    removeBtns[i].addEventListener("click", removeItem);
+  }
 } // note: possible to update singular items instead of re-rendering entire list for better performance
 
 function toggleDone(e) {
@@ -53,7 +59,6 @@ function toggleDone(e) {
 
 // listen for submit event
 addItems.addEventListener("submit", addItem);
-removeItems.addEventListener("click", removeItem);
 itemsList.addEventListener("click", toggleDone);
 
 populateList(items, itemsList);
