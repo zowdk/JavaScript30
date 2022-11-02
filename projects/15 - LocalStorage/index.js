@@ -38,7 +38,7 @@ function toggleDone(e) {
   //find checked item and change state from done to true, store in local storage, and update visually on page
   const el = e.target;
   const index = el.dataset.index;
-  items[index].donw = !items[index].done;
+  items[index].done = !items[index].done;
   localStorage.setItem("items", JSON.stringify(items));
   populateList(items, itemsList);
 }
