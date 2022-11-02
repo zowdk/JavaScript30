@@ -11,7 +11,20 @@ function addItem(e) {
     done: false, // done is a state
   };
   items.push(item);
+  populateList(items, itemsList);
   this.reset();
+}
+//Write a function populateList that takes empty object (plates), and creates HTML stored in platesList
+function populateList(plates = [], platesList) {
+  platesList.innerHTML = plates
+    .map((plate, i) => {
+      return `
+        <li>
+            <label for="">${plate.text}</label>
+        </li>
+        `;
+    })
+    .join("");
 }
 
 // listen for submit event
