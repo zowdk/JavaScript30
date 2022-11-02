@@ -1,5 +1,5 @@
-const addItems = document.getElementById("btn-add");
-// const removeItems = document.getElementById("btn-remove");
+const addItems = document.querySelector(".add-items");
+const removeItems = document.getElementById("btn-remove");
 const itemsList = document.querySelector(".plates");
 const items = JSON.parse(localStorage.getItem("items")) || []; // convert str back into arr of objects
 
@@ -18,7 +18,9 @@ function addItem(e) {
 }
 
 //write a function that removes selected items from the itemsList
-function removeItem(e) {}
+function removeItem(e) {
+  console.log("removing item!");
+}
 
 //Write a function populateList that takes empty object (plates), and creates HTML stored in platesList
 function populateList(plates = [], platesList) {
@@ -30,7 +32,7 @@ function populateList(plates = [], platesList) {
         plate.done ? "checked" : ""
       } />
             <label for="item${i}">${plate.text}</label>
-            <button type="submit" id="btn-remove">❌</>
+            <button type="" id="btn-remove">❌</>
         </li>
         `;
     })
@@ -51,7 +53,7 @@ function toggleDone(e) {
 
 // listen for submit event
 addItems.addEventListener("submit", addItem);
-// removeItems.addEventListener("click", removeItem);
+removeItems.addEventListener("click", removeItem);
 itemsList.addEventListener("click", toggleDone);
 
 populateList(items, itemsList);
