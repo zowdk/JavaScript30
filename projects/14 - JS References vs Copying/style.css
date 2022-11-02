@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: sans-serif;
+  background-color: #05807b;
+  /* max-width: 90vw; */
+  margin: 0 auto;
+}
+/* typography */
+h1 {
+  text-align: center;
+  margin-block: 1em;
+  color: goldenrod;
+}
+.comment {
+  color: limegreen;
+  letter-spacing: 1px;
+  margin-block: 0.75em;
+}
+li {
+  list-style-type: none;
+  padding-block: 0.5em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+a:focus {
+  color: #05807b;
+}
+span {
+  color: #05807b;
+  font-weight: 700;
+}
+.method {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-block: 0.5em;
+  letter-spacing: 1px;
+  color: rgb(241, 137, 168);
+}
+/* layout */
+footer {
+  padding-block: 2em;
+  margin-top: 2em;
+  background-color: goldenrod;
+}
+.container {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
