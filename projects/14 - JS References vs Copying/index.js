@@ -17,6 +17,13 @@ console.log(name, name2); // wesley wes
 const players = ["Wes", "Sarah", "Ryan", "Poppy"];
 
 // and we want to make a copy of it.
+const team = players;
+console.log(players, team);
+team[3] = "Lux";
+console.log(team); // 'Wes', 'Sara', 'Ryan', 'Lux'
+console.log(players); // 'Wes', 'Sara', 'Ryan', 'Lux'
+
+// ==> unlike strings, updating values in arrays changes the original and the copy referenced
 
 // You might think we can just do something like this:
 
