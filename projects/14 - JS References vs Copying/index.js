@@ -47,6 +47,7 @@ const team4 = [].concat(players); // concatenate in existing array into new arra
 const team5 = [...players];
 
 const team6 = Array.from(players); // make copy from players array
+
 // now when we update it, the original one isn't changed
 
 // The same thing goes for objects, let's say we have a person object
@@ -58,8 +59,14 @@ const person = {
 };
 
 // and think we make a copy:
+const captain = person; // this makes a reference to person, not a copy
+captain.number = 99;
+console.log(person); // {name: "Wes Bos", age: 80, number: 99};
 
 // how do we take a copy instead?
+//with Object.assign()
+//Object.assign({blank object}, original-object, {new properties});
+cap2 = Object.assign({}, person, { number: 99 });
 
 // We will hopefully soon see the object ...spread
 
