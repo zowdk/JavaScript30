@@ -66,8 +66,30 @@ console.log(person); // {name: "Wes Bos", age: 80, number: 99};
 // how do we take a copy instead?
 //with Object.assign()
 //Object.assign({blank object}, original-object, {new properties});
-cap2 = Object.assign({}, person, { number: 99 });
+const cap2 = Object.assign({}, person, { number: 99 });
 
 // We will hopefully soon see the object ...spread
+const cap3 = { ...person }; // shallow copy
 
 // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+const wes = {
+  name: "wes",
+  age: 100,
+  social: {
+    twitter: "@wesbos",
+    facebook: "wesbos.developer",
+  },
+};
+
+console.log(wes);
+
+//make a copy of wes that does not update the original
+
+const dev = Object.assign({}, wes);
+dev.social.twitter = "@coolman";
+
+console.log(dev.social); // '@coolman'
+console.log(wes.social); // '@coolman' oh no!
+
+// shallow copies are only 1 level deep, meaning..
+// use clone to make a deep copy of every level
