@@ -4,12 +4,13 @@ const items = [];
 
 function addItem(e) {
   e.preventDefault();
-  console.log("hello");
+  const text = this.querySelector("[name=item]").value; //this refers to form
 
   const item = {
-    text: "Item Name",
+    text, // es6 shorthand
     done: false, // done is a state
   };
+  console.log(item);
 }
 
 // listen for submit event
