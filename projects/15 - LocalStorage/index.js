@@ -5,6 +5,11 @@ const items = [];
 function addItem(e) {
   e.preventDefault();
   console.log("hello");
+
+  const item = {
+    text: "Item Name",
+    done: false, // done is a state
+  };
 }
 
 // listen for submit event
