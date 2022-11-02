@@ -1,5 +1,5 @@
 const addItems = document.querySelector(".add-items");
-const removeItems = document.getElementById("btn-remove");
+const removeItems = document.querySelectorAll(".btn-remove");
 const itemsList = document.querySelector(".plates");
 const items = JSON.parse(localStorage.getItem("items")) || []; // convert str back into arr of objects
 
@@ -32,7 +32,7 @@ function populateList(plates = [], platesList) {
         plate.done ? "checked" : ""
       } />
             <label for="item${i}">${plate.text}</label>
-            <button type="" id="btn-remove">❌</>
+            <button type="" class="btn-remove">❌</>
         </li>
         `;
     })
