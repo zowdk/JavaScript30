@@ -25,7 +25,7 @@ function populateList(plates = [], platesList) {
         `;
     })
     .join("");
-}
+} // note: possible to update singular items instead of re-rendering entire list for better performance
 
 // listen for submit event
 addItems.addEventListener("submit", addItem);
