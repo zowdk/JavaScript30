@@ -10,6 +10,7 @@ function addItem(e) {
     text, // es6 shorthand
     done: false, // done is a state
   };
+  items.push(item);
   this.reset();
 }
 
