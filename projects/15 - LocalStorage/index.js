@@ -17,17 +17,12 @@ function addItem(e) {
   this.reset();
 }
 
-//write a function that removes selected items from the itemsList
-function removeItem(e) {
-  console.log("removing item!");
-}
-
 //Write a function populateList that takes empty object (plates), and creates HTML stored in platesList
 function populateList(plates = [], platesList) {
   platesList.innerHTML = plates
     .map((plate, i) => {
       return `
-        <li>
+        <li class="plate">
             <input type="checkbox" data-index=${i} id="item${i}" ${
         plate.done ? "checked" : ""
       } />
@@ -41,7 +36,9 @@ function populateList(plates = [], platesList) {
   const removeBtns = document.querySelectorAll(".btn-remove");
   for (let i = 0; i < removeBtns.length; i++) {
     // add event listeners on btn-remove so that btn works more than once
-    removeBtns[i].addEventListener("click", removeItem);
+    removeBtns[i].addEventListener("click", function removeItem(e) {
+      itemsList.removeChild(e.target.parentElement);
+    });
   }
 } // note: possible to update singular items instead of re-rendering entire list for better performance
 
