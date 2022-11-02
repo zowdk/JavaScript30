@@ -1,6 +1,6 @@
 const addItems = document.querySelector(".add-items");
 const itemsList = document.querySelector(".plates");
-const items = [];
+const items = JSON.parse(localStorage.getItem("items")) || []; // convert str back into arr of objects
 
 function addItem(e) {
   e.preventDefault();
@@ -12,6 +12,7 @@ function addItem(e) {
   };
   items.push(item);
   populateList(items, itemsList);
+  localStorage.setItem("items", JSON.stringify(items)); // remember to convert to string before passing to local storage
   this.reset();
 }
 //Write a function populateList that takes empty object (plates), and creates HTML stored in platesList
@@ -32,3 +33,5 @@ function populateList(plates = [], platesList) {
 
 // listen for submit event
 addItems.addEventListener("submit", addItem);
+
+populateList(items, itemsList);
