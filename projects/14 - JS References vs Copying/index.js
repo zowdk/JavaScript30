@@ -1,4 +1,17 @@
 // start with strings, numbers and booleans
+let age = 100;
+let age2 = age;
+console.log(age, age2); // 100, 100
+age = 200;
+console.log(age, age2); // 200, 100
+
+let name = "wes";
+let name2 = name;
+console.log(name, name2); // wes wes
+name = "wesley";
+console.log(name, name2); // wesley wes
+
+// ==> changing the original value doesn't update the variable that references the original value
 
 // Let's say we have an array
 const players = ["Wes", "Sarah", "Ryan", "Poppy"];
