@@ -32,10 +32,15 @@ function populateList(plates = [], platesList) {
 } // note: possible to update singular items instead of re-rendering entire list for better performance
 
 function toggleDone(e) {
-  //check if target matches the input we want
-  if (!e.target.matches("input")) return; //skil unless it's an input
+  //check if target matches the input we want aka. event delegation
+  if (!e.target.matches("input")) return; //skip unless it's an input
+
+  //find checked item and change state from done to true, store in local storage, and update visually on page
   const el = e.target;
   const index = el.dataset.index;
+  items[index].donw = !items[index].done;
+  localStorage.setItem("items", JSON.stringify(items));
+  populateList(items, itemsList);
 }
 
 // listen for submit event
