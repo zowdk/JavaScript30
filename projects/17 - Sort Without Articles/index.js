@@ -28,3 +28,7 @@ let sortedBands = bands.sort(function (a, b) {
   //     return -1;
   //   }
 });
+
+document.querySelector("#bands").innerHTML = sortedBands.map(
+  (band) => `<li>${band}</li>`
+);
