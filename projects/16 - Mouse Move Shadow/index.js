@@ -1,5 +1,6 @@
 const hero = document.querySelector(".hero");
 const text = hero.querySelector("h1");
+const walk = 100; //100px
 
 function shadow(e) {
   //get width and height of the hero using destructuring
@@ -13,6 +14,11 @@ function shadow(e) {
     x = x + e.target.offsetLeft;
     y = y + e.target.offsetTop;
   }
+
+  //how far should the text shadow go? how many pixels at most should it be stretched?
+  // if 100 is total walk distance, walk range is between -50 and 50:
+  const xWalk = Math.round((x / width) * walk - walk / 2);
+  const yWalk = Math.round((y / height) * walk - walk / 2);
 
   console.log(x, y);
 }
