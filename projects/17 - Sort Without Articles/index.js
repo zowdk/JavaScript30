@@ -17,11 +17,11 @@ const bands = [
 // update how bands array is displayed in browser
 
 function strip(bandName) {
-  return bandName.replace(/^(a |the |an)/i, "").trim();
+  return bandName.replace(/^(a |the |an)/i, "").trim(); // returns bands without articles
 }
 
 let sortedBands = bands.sort(function (a, b) {
-  if (a > b) {
+  if (strip(a) > strip(b)) {
     return 1;
   } else {
     return -1;
