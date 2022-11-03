@@ -13,3 +13,13 @@ const bands = [
   "Anywhere But Here",
   "An Old Dog",
 ];
+//sort the array of band names alphabetically without articles 'an' or 'a' or 'the'
+// update how bands array is displayed in browser
+
+let sortedBands = bands.sort(function (a, b) {
+  if (a > b) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
