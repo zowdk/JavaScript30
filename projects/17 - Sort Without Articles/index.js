@@ -21,9 +21,10 @@ function strip(bandName) {
 }
 
 let sortedBands = bands.sort(function (a, b) {
-  if (strip(a) > strip(b)) {
-    return 1;
-  } else {
-    return -1;
-  }
+  return strip(a) > strip(b) ? 1 : -1;
+  //   if (strip(a) > strip(b)) {
+  //     return 1;
+  //   } else {
+  //     return -1;
+  //   }
 });
