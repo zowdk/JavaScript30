@@ -13,7 +13,6 @@ const seconds = timeNodes
     // destructure timestamp into mins and secs
     const [mins, secs] = timeCode.split(":").map(parseFloat);
     return mins * 60 + secs;
-    console.log(mins, secs);
   })
   .reduce((total, vidSeconds) => {
     return total + vidSeconds;
@@ -22,7 +21,6 @@ const seconds = timeNodes
 let secondsLeft = seconds;
 const hours = Math.floor(secondsLeft / 3600); // whole hours
 secondsLeft = secondsLeft % 3600;
-console.log(secondsLeft);
 
 const mins = Math.floot(secondsLeft / 60);
 secondsLeft = secondsLeft % 60;

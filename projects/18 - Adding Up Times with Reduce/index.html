@@ -6,66 +6,539 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <header>
+      <h1>Psst: have a look at the JavaScript console 💁🏽‍♀️</h1>
+      <span>Cmd + Opt + J (Mac) | Ctrl + Shift + J (Windows) </span>
+    </header>
     <ul class="videos">
-      <li data-time="5:43">Video 1</li>
-      <li data-time="2:33">Video 2</li>
-      <li data-time="3:45">Video 3</li>
-      <li data-time="0:47">Video 4</li>
-      <li data-time="5:21">Video 5</li>
-      <li data-time="6:56">Video 6</li>
-      <li data-time="3:46">Video 7</li>
-      <li data-time="5:25">Video 8</li>
-      <li data-time="3:14">Video 9</li>
-      <li data-time="3:31">Video 10</li>
-      <li data-time="5:59">Video 11</li>
-      <li data-time="3:07">Video 12</li>
-      <li data-time="11:29">Video 13</li>
-      <li data-time="8:57">Video 14</li>
-      <li data-time="5:49">Video 15</li>
-      <li data-time="5:52">Video 16</li>
-      <li data-time="5:50">Video 17</li>
-      <li data-time="9:13">Video 18</li>
-      <li data-time="11:51">Video 19</li>
-      <li data-time="7:58">Video 20</li>
-      <li data-time="4:40">Video 21</li>
-      <li data-time="4:45">Video 22</li>
-      <li data-time="6:46">Video 23</li>
-      <li data-time="7:24">Video 24</li>
-      <li data-time="7:12">Video 25</li>
-      <li data-time="5:23">Video 26</li>
-      <li data-time="3:34">Video 27</li>
-      <li data-time="8:22">Video 28</li>
-      <li data-time="5:17">Video 29</li>
-      <li data-time="3:10">Video 30</li>
-      <li data-time="4:43">Video 31</li>
-      <li data-time="19:43">Video 32</li>
-      <li data-time="0:47">Video 33</li>
-      <li data-time="0:47">Video 34</li>
-      <li data-time="3:14">Video 35</li>
-      <li data-time="3:59">Video 36</li>
-      <li data-time="2:43">Video 37</li>
-      <li data-time="4:17">Video 38</li>
-      <li data-time="6:56">Video 39</li>
-      <li data-time="3:05">Video 40</li>
-      <li data-time="2:06">Video 41</li>
-      <li data-time="1:59">Video 42</li>
-      <li data-time="1:49">Video 43</li>
-      <li data-time="3:36">Video 44</li>
-      <li data-time="7:10">Video 45</li>
-      <li data-time="3:44">Video 46</li>
-      <li data-time="3:44">Video 47</li>
-      <li data-time="4:36">Video 48</li>
-      <li data-time="3:16">Video 49</li>
-      <li data-time="1:10">Video 50</li>
-      <li data-time="6:10">Video 51</li>
-      <li data-time="2:14">Video 52</li>
-      <li data-time="3:44">Video 53</li>
-      <li data-time="5:05">Video 54</li>
-      <li data-time="6:03">Video 55</li>
-      <li data-time="12:39">Video 56</li>
-      <li data-time="1:56">Video 57</li>
-      <li data-time="4:04">Video 58</li>
+      <li data-time="5:43">
+        <p class="vid-number">01</p>
+        <div class="vid-thumbnail">5:43</div>
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="2:33">
+        <p class="vid-number">02</p>
+        <div class="vid-thumbnail">2:33</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:45">
+        <p class="vid-number">03</p>
+        <div class="vid-thumbnail">3:45</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="0:47">
+        <p class="vid-number">04</p>
+        <div class="vid-thumbnail">0:47</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:21">
+        <p class="vid-number">05</p>
+        <div class="vid-thumbnail">5:21</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="6:56">
+        <p class="vid-number">06</p>
+        <div class="vid-thumbnail">6:56</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:46">
+        <p class="vid-number">07</p>
+        <div class="vid-thumbnail">3:46</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:25">
+        <p class="vid-number">08</p>
+        <div class="vid-thumbnail">5:25</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:14">
+        <p class="vid-number">09</p>
+        <div class="vid-thumbnail">3:14</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:31">
+        <p class="vid-number">10</p>
+        <div class="vid-thumbnail">3:31</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:59">
+        <p class="vid-number">11</p>
+        <div class="vid-thumbnail">5:59</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:07">
+        <p class="vid-number">12</p>
+        <div class="vid-thumbnail">3:07</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="11:29">
+        <p class="vid-number">13</p>
+        <div class="vid-thumbnail">11:29</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="8:57">
+        <p class="vid-number">14</p>
+        <div class="vid-thumbnail">8:57</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:49">
+        <p class="vid-number">15</p>
+        <div class="vid-thumbnail">5:49</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:52">
+        <p class="vid-number">16</p>
+        <div class="vid-thumbnail">5:52</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:50">
+        <p class="vid-number">17</p>
+        <div class="vid-thumbnail">5:50</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="9:13">
+        <p class="vid-number">18</p>
+        <div class="vid-thumbnail">9:13</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="11:51">
+        <p class="vid-number">19</p>
+        <div class="vid-thumbnail">11:51</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="7:58">
+        <p class="vid-number">20</p>
+        <div class="vid-thumbnail">7:58</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="4:40">
+        <p class="vid-number">21</p>
+        <div class="vid-thumbnail">4:40</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="4:45">
+        <p class="vid-number">22</p>
+        <div class="vid-thumbnail">4:45</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="6:46">
+        <p class="vid-number">23</p>
+        <div class="vid-thumbnail">6:46</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="7:24">
+        <p class="vid-number">24</p>
+        <div class="vid-thumbnail">7:24</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="7:12">
+        <p class="vid-number">25</p>
+        <div class="vid-thumbnail">7:12</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:23">
+        <p class="vid-number">26</p>
+        <div class="vid-thumbnail">5:23</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:34">
+        <p class="vid-number">27</p>
+        <div class="vid-thumbnail">3:34</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="8:22">
+        <p class="vid-number">28</p>
+        <div class="vid-thumbnail">8:22</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:17">
+        <p class="vid-number">29</p>
+        <div class="vid-thumbnail">5:17</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:10">
+        <p class="vid-number">30</p>
+        <div class="vid-thumbnail">3:10</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="4:43">
+        <p class="vid-number">31</p>
+        <div class="vid-thumbnail">4:43</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="19:43">
+        <p class="vid-number">32</p>
+        <div class="vid-thumbnail">19:43</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="0:47">
+        <p class="vid-number">33</p>
+        <div class="vid-thumbnail">0:47</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="0:47">
+        <p class="vid-number">34</p>
+        <div class="vid-thumbnail">0:47</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:14">
+        <p class="vid-number">35</p>
+        <div class="vid-thumbnail">3:14</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:59">
+        <p class="vid-number">36</p>
+        <div class="vid-thumbnail">3:59</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="2:43">
+        <p class="vid-number">37</p>
+        <div class="vid-thumbnail">2:43</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="4:17">
+        <p class="vid-number">38</p>
+        <div class="vid-thumbnail">4:17</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="6:56">
+        <p class="vid-number">39</p>
+        <div class="vid-thumbnail">6:56</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:05">
+        <p class="vid-number">40</p>
+        <div class="vid-thumbnail">3:05</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="2:06">
+        <p class="vid-number">41</p>
+        <div class="vid-thumbnail">2:06</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="1:59">
+        <p class="vid-number">42</p>
+        <div class="vid-thumbnail">1:59</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="1:49">
+        <p class="vid-number">43</p>
+        <div class="vid-thumbnail">1:49</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:36">
+        <p class="vid-number">44</p>
+        <div class="vid-thumbnail">3:36</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="7:10">
+        <p class="vid-number">45</p>
+        <div class="vid-thumbnail">7:10</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:44">
+        <p class="vid-number">46</p>
+        <div class="vid-thumbnail">3:44</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:44">
+        <p class="vid-number">47</p>
+        <div class="vid-thumbnail">3:44</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="4:36">
+        <p class="vid-number">48</p>
+        <div class="vid-thumbnail">4:36</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:16">
+        <p class="vid-number">49</p>
+        <div class="vid-thumbnail">3:16</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="1:10">
+        <p class="vid-number">50</p>
+        <div class="vid-thumbnail">1:10</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="6:10">
+        <p class="vid-number">51</p>
+        <div class="vid-thumbnail">6:10</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="2:14">
+        <p class="vid-number">52</p>
+        <div class="vid-thumbnail">2:14</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="3:44">
+        <p class="vid-number">53</p>
+        <div class="vid-thumbnail">3:44</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="5:05">
+        <p class="vid-number">54</p>
+        <div class="vid-thumbnail">5:05</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="6:03">
+        <p class="vid-number">55</p>
+        <div class="vid-thumbnail">6:03</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="12:39">
+        <p class="vid-number">56</p>
+        <div class="vid-thumbnail">12:39</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="1:56">
+        <p class="vid-number">57</p>
+        <div class="vid-thumbnail">1:56</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
+      <li data-time="4:04">
+        <p class="vid-number">58</p>
+        <div class="vid-thumbnail">4:04</div>
+
+        <div class="vid-description">
+          <p class="vid-title">Video Title</p>
+          <p class="vid-author">by Wes Bos</p>
+        </div>
+      </li>
     </ul>
+    <footer>
+      <div class="credits">based on tutorials by <a href="">@wesbos</a></div>
+      <div class="credits">
+        <span>&lt; / &gt;</span> by <a href="">@zowdk</a>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
