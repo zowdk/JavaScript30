@@ -7,4 +7,10 @@
 
 const timeNodes = [...document.querySelectorAll("[data-time]")];
 
-const seconds = timeNodes.map((node) => node.dataset.time);
+const seconds = timeNodes
+  .map((node) => node.dataset.time)
+  .map((timeCode) => {
+    // destructure timestamp into mins and secs
+    const [mins, secs] = timeCode.split(":").map(parseFloat);
+    console.log(mins, secs);
+  });
