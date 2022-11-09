@@ -12,5 +12,6 @@ const seconds = timeNodes
   .map((timeCode) => {
     // destructure timestamp into mins and secs
     const [mins, secs] = timeCode.split(":").map(parseFloat);
+    return mins * 60 + secs;
     console.log(mins, secs);
   });
