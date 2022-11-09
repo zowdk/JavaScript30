@@ -14,4 +14,7 @@ const seconds = timeNodes
     const [mins, secs] = timeCode.split(":").map(parseFloat);
     return mins * 60 + secs;
     console.log(mins, secs);
+  })
+  .reduce((total, vidSeconds) => {
+    return total + vidSeconds;
   });
