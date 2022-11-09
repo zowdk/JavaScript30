@@ -27,7 +27,7 @@ function shadow(e) {
   ${yWalk * -1}px ${xWalk}px 0 rgba(0, 0, 255, 0.7),
   `;
 
-  console.log(x, y);
+  //   console.log(x, y);
 }
 
 hero.addEventListener("mousemove", shadow);
